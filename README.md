@@ -9,4 +9,4 @@ A small command line calculator tool.
 
 ## Usage
 
-Use it by downloading the Main.class file. Run it with `java Main <arg> <num1> <num2>`
+Use it by downloading the Terminal.class file. Run it with `java Terminal <arg> <num1> <num2>`

@@ -1,7 +1,6 @@
 import java.io.IOException;
-import java.util.Objects;
 
-public class Main {
+public class Terminal {
     public static boolean debug=false; // Debug Mode
 
     public static void main(String[] args) throws IOException, InterruptedException {
