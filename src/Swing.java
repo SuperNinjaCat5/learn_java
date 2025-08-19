@@ -83,6 +83,7 @@ public class Swing {
                         if (n2 == 0) {
                             System.out.println("Division by zero is not a thing, so don't do it!");
                             System.out.println();
+                            solution.setText("You cant divide by zero!");
                         } else {
                             double sum = divide(n1, n2);
                             solution.setText(String.valueOf(sum));
