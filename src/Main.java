@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.Objects;
 
 public class Main {
     public static boolean debug=false; // Debug Mode
@@ -7,6 +8,7 @@ public class Main {
         if (args.length < 3) {
             clear_terminal();
             System.out.println("Usage: java Main <operation>(add, subtract, multiply, divide) <num1> <num2>");
+            System.out.println();
             return;
         }
 
@@ -17,23 +19,37 @@ public class Main {
         switch (operation) {
             case "add" -> {
                 int sum = add(num1, num2);
+                clear_terminal();
                 System.out.println(sum);
+                System.out.println();
             }
             case "subtract" -> {
                 int sum = subtract(num1, num2);
+                clear_terminal();
                 System.out.println(sum);
+                System.out.println();
             }
             case "multiply" -> {
                 int sum = multiply(num1, num2);
+                clear_terminal();
                 System.out.println(sum);
+                System.out.println();
             }
             case "divide" -> {
                 if (num2 == 0) {
+                    clear_terminal();
                     System.out.println("Division by zero is not a thing, so don't do it!");
+                    System.out.println();
                 } else {
                     int sum = divide(num1, num2);
+                    clear_terminal();
                     System.out.println(sum);
+                    System.out.println();
                 }
+            }
+            case "help" -> {
+                clear_terminal();
+                System.out.println("Usage: java Main <operation>(add, subtract, multiply, divide) <num1> <num2>");
             }
             default -> {
                 System.out.println("Unknown operation: " + operation);
