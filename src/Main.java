@@ -41,7 +41,7 @@ public class Main {
                     System.out.println("Division by zero is not a thing, so don't do it!");
                     System.out.println();
                 } else {
-                    int sum = divide(num1, num2);
+                    double sum = divide(num1, num2);
                     clear_terminal();
                     System.out.println(sum);
                     System.out.println();
@@ -90,7 +90,7 @@ public class Main {
     public static int multiply(int a, int b) {
         return a * b;
     }
-    public static int divide(int a, int b) {
-        return a / b;
+    public static double divide(int a, int b) {
+        return (double) a / b;
     }
 }
